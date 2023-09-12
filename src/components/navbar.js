@@ -1,40 +1,47 @@
 import React from 'react';
+import NavItem from './navItem';
 
 class Navbar extends React.Component {
   render() {
     return (
       <nav id='navbar' class='nav-menu navbar'>
         <ul>
-          <li>
-            <a href='#hero' class='nav-link scrollto active'>
-              <i class='bx bx-home'></i> <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href='#about' class='nav-link scrollto'>
-              <i class='bx bx-user'></i> <span>About</span>
-            </a>
-          </li>
-          <li>
-            <a href='#resume' class='nav-link scrollto'>
-              <i class='bx bx-file-blank'></i> <span>Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href='#portfolio' class='nav-link scrollto'>
-              <i class='bx bx-book-content'></i> <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href='#services' class='nav-link scrollto'>
-              <i class='bx bx-server'></i> <span>Services</span>
-            </a>
-          </li>
-          <li>
-            <a href='#contact' class='nav-link scrollto'>
-              <i class='bx bx-envelope'></i> <span>Contact</span>
-            </a>
-          </li>
+          <NavItem
+            link='#hero'
+            aClass='nav-link scrollto active'
+            iclass='bx bx-home'
+            text='Home'
+          />
+          <NavItem
+            link='#about'
+            aClass='nav-link scrollto'
+            iClass='bx bx-user'
+            text='About'
+          />
+          <NavItem
+            link='#resume'
+            aClass='nav-link scrollto'
+            iClass='bx bx-file-blank'
+            text='Resume'
+          />
+          <NavItem
+            link='#portfolio'
+            aClass='nav-link scrollto'
+            iClass='bx bx-book-content'
+            text='Portfolio'
+          />
+          <NavItem
+            aClink='#services'
+            aClass='nav-link scrollto'
+            iClass='bx bx-server'
+            text='Services'
+          />
+          <NavItem
+            aClink='#contact'
+            aClass='nav-link scrollto'
+            iClass='bx bx-envelope'
+            text='Contact'
+          />
         </ul>
       </nav>
     );
