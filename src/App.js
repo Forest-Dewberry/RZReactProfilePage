@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'; //??
 import './App.css';
 import './scss/style.scss';
+import SkillsSection from './components/skillsSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <main id='main'>
       <HeroSection />
         <AboutSection />
+        <SkillsSection />
         <Contact />
       </main>
       <Footer />
