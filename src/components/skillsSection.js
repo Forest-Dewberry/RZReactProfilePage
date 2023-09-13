@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Skill from './skill';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; //check this later
-
+import 'aos/dist/aos.css'; 
+//progress bar (purecounter) not working, find other package)
 const SkillsSection = () => {
   const skillsLeft = [
     { name: 'Remote Rotorcraft Operations', value: 100 },

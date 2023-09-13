@@ -11,7 +11,6 @@ import Isotope from 'isotope-layout';
 import Swiper from 'swiper';
 import Typed from 'typed.js';
 //import { Waypoint } from 'react-waypoint';
-import AOS from 'aos';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'; //??
 import './App.css';
