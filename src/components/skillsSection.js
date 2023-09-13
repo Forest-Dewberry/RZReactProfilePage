@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Skill from './skill';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; //check this later
 
 const SkillsSection = () => {
   const skillsLeft = [
@@ -17,6 +19,12 @@ const SkillsSection = () => {
     { name: 'SAS Viya', value: 50 },
     { name: 'Aerial Gunnery', value: 100 },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // You can also add other settings. This is optional.
+    });
+  }, []);
 
   return (
     <section id='skills' className='skills section-bg'>
