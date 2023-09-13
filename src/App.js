@@ -4,6 +4,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import AboutSection from './components/about';
 import SkillsSection from './components/skillsSection';
+import FactsSection from './components/facts';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import GLightbox from 'glightbox';
@@ -25,6 +26,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <FactsSection />
         <ServicesSection />
         <Contact />
       </main>
