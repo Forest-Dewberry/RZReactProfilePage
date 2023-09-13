@@ -31,7 +31,7 @@ function App() {
 
   const handleClosePlatformModal = () => setShowPlatformModal(false);
   const handleShowPlatformModal = () => setShowPlatformModal(true);
-//Platforms Modal Images
+  //Platforms Modal Images
   const images = [
     '530skidRiding.JPG',
     '412mercy.JPG',
@@ -54,54 +54,42 @@ function App() {
     'zandv530.JPG',
     'zandv212.JPG',
   ];
-//Certificates Modal Images
-const certRows = [
-  [
-    { imgSrc: '/src/img/certs/aerialGunnery.PNG', altText: 'Aerial Gunnery' },
-    { imgSrc: '/src/img/certs/aride.avif', altText: 'Aride' },
-    { imgSrc: '/src/img/certs/ASAMDegree.avif', altText: 'ASAM Degree' },
-    { imgSrc: '/src/img/certs/bell222.PNG', altText: 'Bell 222' },
-    { imgSrc: '/src/img/certs/bell412.PNG', altText: 'Bell 412' },
-    { imgSrc: '/src/img/certs/BSBADegree.jpg', altText: 'BSBA Degree' },
-  ],
-  [
-    { imgSrc: '/src/img/certs/ccdg.PNG', altText: 'CCDG' },
-    { imgSrc: '/src/img/certs/ccpc.PNG', altText: 'CCPC' },
-    { imgSrc: '/src/img/certs/cct.jpg', altText: 'CCT' },
-    { imgSrc: '/src/img/certs/fireCard.PNG', altText: 'Fire Card' },
-    { imgSrc: '/src/img/certs/dui.PNG', altText: 'DUI' },
-    { imgSrc: '/src/img/certs/greyOwel.PNG', altText: 'Grey Owel' },
-  ],
-  [
-    { imgSrc: '/src/img/certs/honorable.jpg', altText: 'Honorable' },
-    { imgSrc: '/src/img/certs/htpo.PNG', altText: 'HTPO' },
-    { imgSrc: '/src/img/certs/kerryMove.jpg', altText: 'Kerry Move' },
-    { imgSrc: '/src/img/certs/lbAward.jpg', altText: 'LB Award' },
-    { imgSrc: '/src/img/certs/md530fm.PNG', altText: 'MD 530 FM' },
-    { imgSrc: '/src/img/certs/osha10b.PNG', altText: 'OSHA 10B' },
-  ],
-  [
-    { imgSrc: '/src/img/certs/pMech.PNG', altText: 'PMech' },
-    { imgSrc: '/src/img/certs/post.jpeg', altText: 'Post' },
-    { imgSrc: '/src/img/certs/pt6t.PNG', altText: 'PT6T' },
-    { imgSrc: '/src/img/certs/sasMl.PNG', altText: 'SAS ML' },
-    { imgSrc: '/src/img/certs/sasVa.PNG', altText: 'SAS VA' },
-    { imgSrc: '/src/img/certs/topgun.jpg', altText: 'Top Gun' },
-  ],
-  [
-    { imgSrc: '/src/img/certs/webDevFund.png', altText: 'Web Dev Fund' },
-  ],
-];
-
-function App() {
-  return (
-    <div className="App">
-      <CertsModal certRows={certRows} />
-    </div>
-  );
-}
-
-export default App;
+  //Certificates Modal Images
+  const certRows = [
+    [
+      { imgSrc: '/src/img/certs/aerialGunnery.PNG', altText: 'Aerial Gunnery' },
+      { imgSrc: '/src/img/certs/aride.avif', altText: 'Aride' },
+      { imgSrc: '/src/img/certs/ASAMDegree.avif', altText: 'ASAM Degree' },
+      { imgSrc: '/src/img/certs/bell222.PNG', altText: 'Bell 222' },
+      { imgSrc: '/src/img/certs/bell412.PNG', altText: 'Bell 412' },
+      { imgSrc: '/src/img/certs/BSBADegree.jpg', altText: 'BSBA Degree' },
+    ],
+    [
+      { imgSrc: '/src/img/certs/ccdg.PNG', altText: 'CCDG' },
+      { imgSrc: '/src/img/certs/ccpc.PNG', altText: 'CCPC' },
+      { imgSrc: '/src/img/certs/cct.jpg', altText: 'CCT' },
+      { imgSrc: '/src/img/certs/fireCard.PNG', altText: 'Fire Card' },
+      { imgSrc: '/src/img/certs/dui.PNG', altText: 'DUI' },
+      { imgSrc: '/src/img/certs/greyOwel.PNG', altText: 'Grey Owel' },
+    ],
+    [
+      { imgSrc: '/src/img/certs/honorable.jpg', altText: 'Honorable' },
+      { imgSrc: '/src/img/certs/htpo.PNG', altText: 'HTPO' },
+      { imgSrc: '/src/img/certs/kerryMove.jpg', altText: 'Kerry Move' },
+      { imgSrc: '/src/img/certs/lbAward.jpg', altText: 'LB Award' },
+      { imgSrc: '/src/img/certs/md530fm.PNG', altText: 'MD 530 FM' },
+      { imgSrc: '/src/img/certs/osha10b.PNG', altText: 'OSHA 10B' },
+    ],
+    [
+      { imgSrc: '/src/img/certs/pMech.PNG', altText: 'PMech' },
+      { imgSrc: '/src/img/certs/post.jpeg', altText: 'Post' },
+      { imgSrc: '/src/img/certs/pt6t.PNG', altText: 'PT6T' },
+      { imgSrc: '/src/img/certs/sasMl.PNG', altText: 'SAS ML' },
+      { imgSrc: '/src/img/certs/sasVa.PNG', altText: 'SAS VA' },
+      { imgSrc: '/src/img/certs/topgun.jpg', altText: 'Top Gun' },
+    ],
+    [{ imgSrc: '/src/img/certs/webDevFund.png', altText: 'Web Dev Fund' }],
+  ];
 
   return (
     <div className='App'>
@@ -116,24 +104,21 @@ export default App;
         <Button variant='primary' onClick={handleShowFlightTimeModal}>
           Show Flight Time
         </Button>{' '}
-        {/* Button to open the FlightTimeModal */}
         <Button variant='primary' onClick={handleShowPlatformModal}>
           Show Platforms
         </Button>{' '}
-        {/* Button to open the PlatformModal */}
       </main>
       <Footer />
       <FlightTimeModal
         show={showFlightTimeModal}
         handleClose={handleCloseFlightTimeModal}
       />{' '}
-      {/* FlightTimeModal component */}
       <PlatformModal
         show={showPlatformModal}
         handleClose={handleClosePlatformModal}
         images={images}
       />{' '}
-      {/* PlatformModal component */}
+      <CertsModal certRows={certRows} />
     </div>
   );
 }
