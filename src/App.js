@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'; //??
 import './App.css';
 import './scss/style.scss';
+import ServicesSection from './components/services';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ServicesSection />
         <Contact />
       </main>
       <Footer />
