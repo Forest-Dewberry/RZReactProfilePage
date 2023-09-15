@@ -1,6 +1,6 @@
 // Contact.js
 import React from 'react';
-import ContactInfo from './contactInfo';
+import ContactInfo from './ContactInfo';
 
 const Contact = () => (
   <section id="contact" className="contact">

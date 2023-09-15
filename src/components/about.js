@@ -10,7 +10,7 @@ const AboutSection = () => {
           <p className="mt-2">Throughout my career, I have had the privilege of working in diverse industries across the globe, gaining invaluable experiences in fast-paced and challenging environments.
             Driven by a strong sense of curiosity, I have always had a genuine passion for learning and solving complex problems. I find transforming abstract concepts into tangible outcomes deeply fulfilling, whether it's
             through creative projects, problem-solving initiatives, or innovative ventures. I have had the privilege of embarking on a fulfilling career path that encompasses various fields, including Aviation,
-             Diplomatic Security, Law Enforcement, and others. Experiences rooted in my service as a <a href="" role="button" data-bs-toggle="modal" data-bs-target="#usmcModal">United States Marine.</a></p>
+             Diplomatic Security, Law Enforcement, and others. Experiences rooted in my service as a United States Marine.</p>
           <p className="mt-2">In recent years, I have focused my efforts on acquiring tech-centric skills. I find great satisfaction in the realm of data analysis, but I am equally fulfilled by tackling complex tasks and resolving
              difficult issues across various domains, be it coding, data governance, economical procurement, eCommerce, operations in austere|remote environments, and more.</p>
           <p className="mt-2">After earning my most recent degree in Business Analytics, I submitted<a href="assets/pdf/jsub.pdf" name="marineDecs"><em> "Identifying
@@ -24,7 +24,7 @@ const AboutSection = () => {
 
         <div className="row">
           <div className="col-lg-4" data-aos="fade-right">
-            <img src={ryanpic} className="img-fluid img-thumbnail rounded-3" alt="A Picture of Ryan" />
+            <img src={ryanpic} className="img-fluid img-thumbnail rounded-3" alt='{}' />
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Data Analyst | Web Developer | Bespoke Projects</h3>

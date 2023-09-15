@@ -1,0 +1,23 @@
+//Platforms Modal Images
+export const helicopterImages = [
+    '530skidRiding.JPG',
+    '412mercy.JPG',
+    '212st.JPG',
+    '530gunners.JPG',
+    's61.JPG',
+    's64tower.JPG',
+    'ch53dTanker.JPG',
+    'ch53eBoat.jpg',
+    '24.jpg',
+    '212st.JPG',
+    '222mercy.JPG',
+    '530s.JPG',
+    'bw530b.JPG',
+    'bwGunner.JPG',
+    'ch53d.JPG',
+    'ch54a.JPG',
+    'paGuys.JPG',
+    'r22.JPG',
+    'zandv530.JPG',
+    'zandv212.JPG',
+];

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Skill from './skill';
+import Skill from './Skill';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 //progress bar (purecounter) not working, find other package)

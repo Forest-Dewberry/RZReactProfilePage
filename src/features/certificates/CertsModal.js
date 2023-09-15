@@ -1,13 +1,16 @@
-// Modal.js
+// CertsModal.js
 import React from 'react';
-import ImageGrid from './ImageGrid';
+import CertRow from './CertRow';
+import { CERTIFICATES } from '../../shared/CERTIFICAES';
 
-const Modal = ({ id, title, imageGrids }) => (
-    <div id={id} className='modal fade' role='dialog'>
-        <div className='modal-dialog modal-xl' role='document'>
+const CertsModal = ({ certRows }) => (
+    <div id='certsModal' className='modal fade' role='dialog'>
+        <div className='modal-dialog modal-lg' role='document'>
             <div className='modal-content'>
                 <div className='modal-header'>
-                    <h3 className='modal-title'>{title}</h3>
+                    <h3 className='modal-title'>
+                        Professional Certifications & Awards
+                    </h3>
                     <button
                         type='button'
                         className='close btn btn-danger'
@@ -18,8 +21,8 @@ const Modal = ({ id, title, imageGrids }) => (
                 </div>
                 <div className='modal-body'>
                     <div className='container-fluid'>
-                        {imageGrids.map((images, index) => (
-                            <ImageGrid key={index} images={images} />
+                        {certRows.map((certs, index) => (
+                            <CertRow key={index} certs={certs} />
                         ))}
                     </div>
                 </div>
@@ -28,4 +31,4 @@ const Modal = ({ id, title, imageGrids }) => (
     </div>
 );
 
-export default Modal;
+export default CertsModal;
